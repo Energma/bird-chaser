@@ -22,8 +22,11 @@ This software helps you deter birds from frequenting balconies and terraces in b
 
 1. **Wiring:** Connect the components as shown in the images below:
 
-   [Image of final setup](./img/IMG_1314.jpg)
-   [Image of initial setup](./img/IMG_1301.jpg)
+   ![Alt Text](./img/IMG_1315.jpg)
+
+
+   - [Image of final setup](./img/IMG_1314.jpg)
+   - [Image of initial setup](./img/IMG_1301.jpg)
 
 2. **SD Card Preparation:**
    - Format the SD card with the FAT32 file system.
