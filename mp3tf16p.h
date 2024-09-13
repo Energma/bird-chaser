@@ -20,6 +20,9 @@ public:
     void playTrackNumber(int trackNumber, int volume, boolean waitPlayTerminated = true);
     boolean playCompleted(void);
     void initialize(void);
+    void volumeUp(void);
+    void volumeDown(void);
+    void setVolume(int settings);
     int serialPrintStatus(int errorOnly);
 };
 
@@ -48,7 +51,7 @@ void MP3Player::initialize(void)
         while (true)
             ;
     }
-    player.volume(10);
+    player.volume(30);
     Serial.println(F("MP3Player online."));
 }
 
@@ -67,6 +70,26 @@ void MP3Player::waitPlayIsTerminated(void)
     while (!playCompleted())
     {
     }
+}
+
+void MP3Player::setVolume(int settings) 
+{
+  player.volume(settings);
+  Serial.print("Volume configured!");
+}
+
+void MP3Player::volumeUp()
+{
+  player.volumeUp();
+  Serial.print("Volume Up ( + ). current: ");
+  Serial.println(player.readVolume());
+}
+
+void MP3Player::volumeDown()
+{
+  player.volumeDown();
+  Serial.print("Volume Down ( - ). current: ");
+  Serial.println(player.readVolume());
 }
 
 boolean MP3Player::playCompleted(void)
