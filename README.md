@@ -35,6 +35,7 @@ This software helps you deter birds from frequenting balconies and terraces in b
 3. **Arduino Code:**
    - Upload the provided Arduino code to your Arduino Nano.
 
+      ![Circ Img](./img/circuit.png)
 ## Usage
 
 1. Power on the device.
@@ -46,13 +47,4 @@ This software helps you deter birds from frequenting balconies and terraces in b
 - Ensure the speaker is loud enough to cover the desired area.
 - Consider using different bird sounds to prevent habituation.
 - This device is intended to deter birds humanely. 
-Changes Made:
 
-Improved clarity and organization: Rewrote sections for better flow and understanding.
-Added missing information: Included details about SD card preparation and code uploading.
-Enhanced language: Used more concise and professional language.
-Added usage instructions: Provided clear steps on how to use the device.
-Included notes: Added helpful tips and considerations for users.
-Rate this answer: 
-Context Sources (1 file)
-Enter a prompt here
